@@ -24,8 +24,8 @@ else
   git --version
   git clone https://github.com/terwer/dragonwell8.git
   # 获取子模块
-  chmod +x ./get_source_dragonwell.sh
-  bash ./get_source_dragonwell.sh -s github
+  chmod +x /home/dragonwell8/get_source_dragonwell.sh
+  /bin/bash /home/dragonwell8/get_source_dragonwell.sh -s github
 fi
 
 cd dragonwell8
@@ -37,8 +37,8 @@ if [[ -d build ]]; then
   echo "already build"
 else
   # 编译配置
-  chmod +x ./configure
-  ./configure --with-boot-jdk=/opt/java/jdk1.7.0_80 --with-debug-level=slowdebug --with-jvm-variants=server --with-target-bits=64 --enable-ccache --with-num-cores=4 --with-memory-size=3000
+  chmod +x /home/dragonwell8/configure
+  /home/dragonwell8/configure --with-boot-jdk=/opt/java/jdk1.7.0_80 --with-debug-level=slowdebug --with-jvm-variants=server --with-target-bits=64 --enable-ccache --with-num-cores=4 --with-memory-size=3000
 
   # 编译源码
   sudo make images

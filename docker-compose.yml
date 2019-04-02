@@ -12,3 +12,4 @@ services:
       - 22:22
     volumes:
       - ./code:/home/
+      - ./bootjdk:/opt/java
