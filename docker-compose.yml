@@ -1,0 +1,12 @@
+version: '3'
+services:
+  docker-draggonwell8:
+    image: terwer/draggonwell8
+    container_name: docker-draggonwell8
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - 22:22
+    volumes:
+      - ./build:/home/docker-draggonwell8/build
