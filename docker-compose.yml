@@ -11,4 +11,4 @@ services:
     ports:
       - 22:22
     volumes:
-      - ./build:/home/docker-draggonwell8/build
+      - ./code:/home/
