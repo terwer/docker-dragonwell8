@@ -1,6 +1,8 @@
 version: '3'
 services:
   docker-draggonwell8:
+    stdin_open: true
+    tty: true
     image: terwer/draggonwell8
     container_name: docker-draggonwell8
     build:

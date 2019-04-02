@@ -7,3 +7,9 @@ ENV LANG C.UTF-8
 # 设置时区
 # ENV TZ Asia/Shanghai
 ENV TZ CST-8
+
+COPY ./sources.list /sources.list
+COPY ./entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+CMD ["bash", "/entrypoint.sh"]
