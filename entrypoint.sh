@@ -11,6 +11,7 @@ apt-get update
 # 安装依赖
 apt-get install libx11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev libcups2-dev libfreetype6-dev libasound2-dev -y
 apt-get install build-essential -y
+apt-get install unzip -y
 
 # 安装ccache高速编译工具
 apt install ccache -y

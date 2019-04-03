@@ -9,7 +9,8 @@ ENV LANG C.UTF-8
 ENV TZ CST-8
 
 COPY ./sources.list /sources.list
-COPY ./entrypoint.sh /entrypoint.sh
+# Use  vulomn replace follow script
+# COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 CMD ["bash", "/entrypoint.sh"]

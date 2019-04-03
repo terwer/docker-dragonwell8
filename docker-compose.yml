@@ -3,7 +3,7 @@ services:
   docker-draggonwell8:
     stdin_open: true
     tty: true
-    image: terwer/draggonwell8
+    image: terwer/draggonwell8:14.04
     container_name: docker-draggonwell8
     build:
       context: ./
@@ -11,5 +11,6 @@ services:
     ports:
       - 22:22
     volumes:
+      - ./entrypoint.sh:/entrypoint.sh
       - ./code:/home/
       - ./bootjdk:/opt/java
