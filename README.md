@@ -21,9 +21,12 @@ find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix
 
 # FAQ
 
-Q: build error:`/home/dragonwell8/hotspot/src/share/vm/jfr/utilities/jfrJavaLog.cpp:47:72: error: format not a string literal and no format arguments [-Werror=format-security]`
+Q1: build error:`/home/dragonwell8/hotspot/src/share/vm/jfr/utilities/jfrJavaLog.cpp:47:72: error: format not a string literal and no format arguments [-Werror=format-security]`         
+A1: see https://github.com/alibaba/dragonwell8_hotspot/pull/2/commits/e6af6156d489a079c2a7b0a7cc3e6dc4f40f42c5
 
-A: see https://github.com/alibaba/dragonwell8_hotspot/pull/2/commits/e6af6156d489a079c2a7b0a7cc3e6dc4f40f42c5
+Q2: build error:`/home/dragonwell8/hotspot/src/share/vm/jfr/periodic/jfrThreadCPULoadEvent.cpp:131:84: error: format %d expects argument of type int, but argument 3 has type size_t {aka long unsigned int} [-Werror=format=]`          
+A2: see https://github.com/alibaba/dragonwell8_hotspot/pull/2/commits/9eca13c709dbab606a179875cd0e322c370eec45
+
 
 # Build && Run
 
