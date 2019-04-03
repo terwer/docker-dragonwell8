@@ -11,6 +11,5 @@ services:
     ports:
       - 22:22
     volumes:
-      - ./entrypoint.sh:/entrypoint.sh
       - ./code:/home/
       - ./bootjdk:/opt/java
