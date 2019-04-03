@@ -38,5 +38,7 @@ docker-compose up
 
 ```
 docker exec -it docker-draggonwell8 bash
+export JAVA_HOME=/home/dragonwell8/build/linux-x86_64-normal-server-slowdebug/jdk
+export PATH=$PATH:$JAVA_HOME/bin
 java -version
 ```
