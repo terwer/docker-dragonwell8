@@ -46,5 +46,8 @@ else
 fi
 
 # 验证编译结果
-/bin/bash /home/dragonwell8/build/linux-x86_64-normal-server-slowdebug/jdk/bin/java -version
+export JAVA_HOME=/home/dragonwell8/build/linux-x86_64-normal-server-slowdebug/jdk
+export PATH=$PATH:$JAVA_HOME/bin
+chmod +x /home/dragonwell8/build/linux-x86_64-normal-server-slowdebug/jdk/bin/java
+java -version
 /bin/bash
