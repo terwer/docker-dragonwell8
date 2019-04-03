@@ -30,6 +30,9 @@ else
     # 获取子模块
     chmod +x /home/dragonwell8/get_source_dragonwell.sh
     /bin/bash /home/dragonwell8/get_source_dragonwell.sh -s github
+    # 获取bootjdk
+    wget https://terwer.oss-cn-qingdao.aliyuncs.com/soft/jdk/jdk-7u80-linux-x64.tar.gz
+    unzip jdk-7u80-linux-x64.tar.gz -d /opt/java
   fi
 
   # 编译配置
