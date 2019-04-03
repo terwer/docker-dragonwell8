@@ -38,7 +38,7 @@ else
   # 编译配置
   cd /home/dragonwell8
   chmod +x ./configure
-  ./configure --with-boot-jdk=/opt/java/jdk1.7.0_80 --with-freetype-include=/usr/include/freetype2 --with-freetype-lib=/usr/lib/x86_64-linux-gnu --with-debug-level=slowdebug --with-jvm-variants=server --with-target-bits=64 --enable-ccache --with-num-cores=4 --with-memory-size=3000
+  ./configure --with-boot-jdk=/opt/java/jdk1.7.0_80 --with-freetype-include=/usr/include/freetype2 --with-freetype-lib=/usr/lib/x86_64-linux-gnu --with-debug-level=slowdebug --disable-warnings-as-errors --with-native-debug-symbols=internal --with-jvm-variants=server --with-target-bits=64 --enable-ccache --with-num-cores=4 --with-memory-size=3000
 
   # 编译源码
   sudo make images
