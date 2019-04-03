@@ -19,6 +19,12 @@ bash ./get_source_dragonwell.sh -s github
 find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix
 ```
 
+# FAQ
+
+Q:build error:`/home/dragonwell8/hotspot/src/share/vm/jfr/utilities/jfrJavaLog.cpp:47:72: error: format not a string literal and no format arguments [-Werror=format-security]`
+
+A:see https://github.com/alibaba/dragonwell8_hotspot/pull/2/commits/e6af6156d489a079c2a7b0a7cc3e6dc4f40f42c5
+
 # Build && Run
 
 ```
