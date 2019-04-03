@@ -2,6 +2,7 @@
 docker build for alibaba dragonwell8
 
 # Pre requirements
+* Install [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/)
 * Download `dragonwell8` source code and put it in `code` forder like this `./code/dragonwell8/...`
 ```
 cd code
