@@ -17,13 +17,13 @@ or
 ```
 git clone https://github.com/terwer/dragonwell8.git --depth 1
 cd dragonwell8
-git clone https://github.com/terwer/dragonwell8_jdk.git --depth 1
-git clone https://github.com/terwer/dragonwell8_hotspot.git --depth 1
-git clone https://github.com/alibaba/dragonwell8_corba.git --depth 1
-git clone https://github.com/alibaba/dragonwell8_langtools.git --depth 1
-git clone https://github.com/alibaba/dragonwell8_nashorn.git --depth 1
-git clone https://github.com/alibaba/dragonwell8_jaxp.git --depth 1
-git clone https://github.com/alibaba/dragonwell8_jaxws.git --depth 1
+git clone https://github.com/terwer/dragonwell8_jdk.git jdk --depth 1
+git clone https://github.com/terwer/dragonwell8_hotspot.git hotspot --depth 1
+git clone https://github.com/alibaba/dragonwell8_corba.git corba --depth 1
+git clone https://github.com/alibaba/dragonwell8_langtools.git langtools --depth 1
+git clone https://github.com/alibaba/dragonwell8_nashorn.git nashorn --depth 1
+git clone https://github.com/alibaba/dragonwell8_jaxp.git nashorn --depth 1
+git clone https://github.com/alibaba/dragonwell8_jaxws.git jaxws --depth 1
 ```
 
 * Download jdk7 bootjdk and put int in `bootjdk` forder like this `bootjdk/jdk1.7.0_80`,you can download it in `https://terwer.oss-cn-qingdao.aliyuncs.com/soft/jdk/jdk-7u80-linux-x64.tar.gz`
