@@ -24,6 +24,9 @@ git clone https://github.com/alibaba/dragonwell8_langtools.git langtools --depth
 git clone https://github.com/alibaba/dragonwell8_nashorn.git nashorn --depth 1
 git clone https://github.com/alibaba/dragonwell8_jaxp.git jaxp --depth 1
 git clone https://github.com/alibaba/dragonwell8_jaxws.git jaxws --depth 1
+
+# fetch changes
+git fetch --unshallow
 ```
 
 * Download jdk7 bootjdk and put int in `bootjdk` forder like this `bootjdk/jdk1.7.0_80`,you can download it in `https://terwer.oss-cn-qingdao.aliyuncs.com/soft/jdk/jdk-7u80-linux-x64.tar.gz`
